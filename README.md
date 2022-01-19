@@ -46,6 +46,10 @@ const MyComponent = () => {
 };
 ```
 
+You can see usage example in `Form` component, which is shown when you run the application in this repo
+
+To see the example, run `npm i` and `npm start` from the terminal.
+
 ## Internals
 
 State is stored in context `ToasterContext`, which is abstracted away with `toastReducer` via custom hooks: `useToast`
