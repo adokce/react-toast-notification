@@ -1,6 +1,6 @@
 # react-toast-notification
 
-[![Edit react-typescript](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/adokce/react-toast-notification/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit react-typescript](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/adokce/react-toast-notification)
 
 ## Usage
 
@@ -48,7 +48,7 @@ const MyComponent = () => {
 
 You can see usage example in `Form` component, which is shown when you run the application in this repo
 
-To see the example, run `npm i` and `npm start` from the terminal.
+To see the example, run `npm i` and `npm start` from the terminal or use the [codesandbox](https://codesandbox.io/s/github/adokce/react-toast-notification) to see it immidiately in your browser.
 
 ## Internals
 
@@ -60,3 +60,5 @@ and `useToastInternal`.
 `useToastInternal`, however provides a list, `notifications` and a `closeToast` which are used inside the `Toasts` component, where the React Portal is created to host our toasts. These two drive the toasts rendering and closing logic. Lastly, there is `Toast` component, which is the UI implementation of a toast notification.
 
 `Toast` and it's parent, `Toasts` are styled with styled-components library and their styles live in the same folder with `styles.js` name.
+
+![alt text](./screenshot.png)
