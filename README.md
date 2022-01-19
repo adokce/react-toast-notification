@@ -1,5 +1,7 @@
 # react-toast-notification
 
+[![Edit react-typescript](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/adokce/react-toast-notification/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Usage
 
 ### Wrap your application with Toaster
