@@ -15,6 +15,7 @@ const useToast = () => {
   return { triggerToast };
 };
 
+// Only for internal Toaster use
 const useToastInternal = () => {
   const context = useContext(ToasterContext);
 
