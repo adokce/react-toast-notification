@@ -25,7 +25,7 @@ const Form = () => {
     triggerToast({
       type,
       message,
-      duration: parseInt(duration, 10) * 1000 || undefined // Sanitize duration input
+      duration: parseInt(duration, 10) * 1000 || undefined, // Sanitize duration input
     });
   };
 

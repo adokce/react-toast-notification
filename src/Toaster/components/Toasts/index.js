@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components/macro";
+
 import { useToastInternal } from "../../hooks";
 import Toast from "../Toast";
+import { ToastsWrapper } from "./styles";
 
 const Toasts = () => {
   const { notifications, closeToast } = useToastInternal();
 
   return (
     <ToastsPortal>
-      <Temp>
+      <ToastsWrapper>
         {notifications.map((n) => {
           return <Toast key={n.id} {...n} onClose={closeToast} />;
         })}
-      </Temp>
+      </ToastsWrapper>
     </ToastsPortal>
   );
 };
@@ -42,31 +43,3 @@ const ToastsPortal = ({ children }) => {
     <></>
   );
 };
-
-const Temp = styled.div`
-  > * {
-    margin-top: 25px;
-  }
-
-  > *:first-child {
-    margin-top: 0px;
-  }
-
-  overflow: hidden; // Prevent horizontal scrollbar from appearing
-  inset: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  padding: 0px 40px;
-
-  /* mobile */
-  justify-content: center;
-  align-items: center;
-
-  /* desktop */
-  @media (min-width: 630px) {
-    padding: 68px 0px;
-
-    justify-content: flex-end;
-  }
-`;
