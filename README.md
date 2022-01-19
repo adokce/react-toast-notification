@@ -61,4 +61,4 @@ and `useToastInternal`.
 
 `Toast` and it's parent, `Toasts` are styled with styled-components library and their styles live in the same folder with `styles.js` name.
 
-![alt text](./screenshot.png)
+![Example App Screenshot](./screenshot.png)
