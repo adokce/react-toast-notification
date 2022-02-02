@@ -5,7 +5,7 @@ const useToast = () => {
   const context = useContext(ToasterContext);
 
   if (context === undefined) {
-    throw new Error("useCount must be used within a CountProvider");
+    throw new Error("useToast must be used within a ToasterProvider");
   }
 
   const triggerToast = ({ type, message, duration = 6000 }) => {
@@ -20,7 +20,7 @@ const useToastInternal = () => {
   const context = useContext(ToasterContext);
 
   if (context === undefined) {
-    throw new Error("useCount must be used within a CountProvider");
+    throw new Error("useToastInternal must be used within a ToasterProvider");
   }
 
   const closeToast = (id) => {
